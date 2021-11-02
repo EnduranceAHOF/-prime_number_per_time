@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 	MPI_Comm_rank(MPI_COMM_WORLD, &id);
 
 	cout << "Ingrese Tiempo: " << endl;
-	cin >> tiempo;
+	tiempo = atoi(argv[0]);
 
 	if (id == 0)
 	{
